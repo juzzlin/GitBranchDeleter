@@ -13,6 +13,10 @@ $ ./git-branch-deleter
 
 Check the branches you want to delete and click `Apply`.
 
+## Limitations
+
+Currently deletes **local** branches only.
+
 ## Dependencies and assumptions
 
 * Python 3
