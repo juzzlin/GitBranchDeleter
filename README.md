@@ -19,6 +19,6 @@ Check the branches you want to delete and click `Apply`.
 * PyGTK 3
 * `git` executable must be in `PATH`
 
-## Licence
+## License
 
 MIT
