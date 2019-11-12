@@ -10,6 +10,10 @@ Usage (within your repository):
 ```
 $ ./git-branch-deleter
 ```
+Delete with `-D`:
+```
+$ ./git-branch-deleter -D
+```
 
 Check the branches you want to delete and click `Apply`.
 
