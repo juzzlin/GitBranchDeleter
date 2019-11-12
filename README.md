@@ -1,6 +1,8 @@
 # Git Branch Deleter
 Small PyGTK-based utility program to delete Git branches
 
+![Git Branch Deleter creenshot](/screenshots/1.0/1.png?raw=true)
+
 ## What the hell is this?
 
 This is for people who use Git via the terminal (on Linux) and find it annoying to delete branches when there are a lot of them.
