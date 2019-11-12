@@ -23,10 +23,12 @@
 # SOFTWARE.
 #
 
+import signal
 import subprocess
 import gi
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
+from gi.repository import GLib
 
 
 class Application:
@@ -140,7 +142,6 @@ class Application:
         def updateApplyButton(self):
             self.applyButton.set_sensitive(self.atLeastOneChecked())
 
-
     def __init__(self):
         self.mainWindow = Application.MainWindow()
         self.mainWindow.set_position(Gtk.WindowPosition.CENTER)
@@ -153,6 +154,7 @@ class Application:
 
 def main():
     app = Application()
+    GLib.unix_signal_add(GLib.PRIORITY_DEFAULT, signal.SIGINT, Gtk.main_quit)    
     app.run()
 
 
